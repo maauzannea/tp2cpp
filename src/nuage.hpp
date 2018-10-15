@@ -69,7 +69,7 @@ T barycentre_v1(Nuage<T> &n) {
 }
 
 template <>
-Polaire barycentre_v1(Nuage<Polaire> &n) {
+Polaire barycentre_v1<Polaire>(Nuage<Polaire> &n) {
 	Polaire bary;
 	double xSum = 0.0;
 	double ySum = 0.0;
@@ -86,5 +86,29 @@ Polaire barycentre_v1(Nuage<Polaire> &n) {
 		bary.setAngle(0.0);
 		bary.setDistance(0.0);
 	}
+	return bary;
+}
+
+template <typename T, typename C>
+T barycentre_v2(C &n) {
+	T bary;
+	Cartesien buf;
+	double xSum = 0.0;
+	double ySum = 0.0;
+	typename C::const_iterator it = n.begin();
+	while(it != n.end()) {
+		(*it).convertir(buf);
+		xSum += buf.getX();
+		ySum += buf.getY();
+		++it;
+	}
+	if (n.size() != 0) {
+		buf.setX(xSum/n.size());
+		buf.setY(ySum/n.size());
+	} else {
+		buf.setX(0.0);
+		buf.setY(0.0);
+	}
+	buf.convertir(bary);
 	return bary;
 }

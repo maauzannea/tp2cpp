@@ -5,12 +5,12 @@
 
 //#include <cosinus.hpp>
 //#include <exponentielle.hpp>
-//#include <nuage.hpp>
+#include <nuage.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
 //------------------------------------------------------------------------------------------------ 1
-/*TEST_CASE ( "TP2_Nuage::Ajout" ) {
+TEST_CASE ( "TP2_Nuage::Ajout" ) {
  Nuage<Cartesien> n;
 
  REQUIRE ( n.size() == 0u );
@@ -21,7 +21,7 @@
  n.ajouter(Cartesien(34,56));
 
  REQUIRE ( n.size() == 4u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 2
 /*TEST_CASE ( "TP2_Nuage::Iterateurs" ) {

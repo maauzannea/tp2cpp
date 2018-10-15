@@ -6,6 +6,28 @@
 
 #IncludeRegexTransform: 
 
+../src/cartesien.hpp
+point.hpp
+../src/point.hpp
+
+../src/nuage.hpp
+point.hpp
+../src/point.hpp
+cartesien.hpp
+../src/cartesien.hpp
+polaire.hpp
+../src/polaire.hpp
+vector
+-
+
+../src/point.hpp
+sstream
+-
+
+../src/polaire.hpp
+point.hpp
+../src/point.hpp
+
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/src/cartesien.cpp
 cartesien.hpp
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/src/cartesien.hpp
@@ -478,5 +500,7 @@ cassert
 catch.hpp
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/test/catch.hpp
 cmath
+-
+nuage.hpp
 -
 

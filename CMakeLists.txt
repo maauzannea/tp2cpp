@@ -38,7 +38,7 @@ set ( ZZ3_HEADERS
       #src/cosinus.hpp
       #src/exponentielle.hpp
       #src/factorielle.hpp
-      #src/nuage.hpp
+      src/nuage.hpp
       src/point.hpp
       src/polaire.hpp
       #src/puissance.hpp

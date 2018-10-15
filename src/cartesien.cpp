@@ -40,8 +40,11 @@ void Cartesien::convertir(Cartesien &c) const {
 }
 
 void Cartesien::convertir(Polaire &p) const { 
+	double angle = 0.0;
 	double dist = sqrt(pow(x,2) + pow(y,2));
-	double angle = 180.0 * acos(x/dist) / PI;
+	if (dist != 0.0) {
+		angle = 180.0 * acos(x/dist) / PI;
+	}
 	p.setDistance(dist);
 	p.setAngle(angle);
 }

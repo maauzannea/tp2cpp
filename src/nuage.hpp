@@ -43,3 +43,27 @@ template <typename T>
 typename Nuage<T>::const_iterator Nuage<T>::end() const {
 	return vectPoints.end();
 }
+
+template <typename T>
+T barycentre_v1(Nuage<T> &n) {
+	T bary;
+	Cartesien buf;
+	double xSum = 0.0;
+	double ySum = 0.0;
+	typename Nuage<T>::const_iterator it = n.begin();
+	while(it != n.end()) {
+		(*it).convertir(buf);
+		xSum += buf.getX();
+		ySum += buf.getY();
+		++it;
+	}
+	if (n.size() != 0) {
+		buf.setX(xSum/n.size());
+		buf.setY(ySum/n.size());
+	} else {
+		buf.setX(0.0);
+		buf.setY(0.0);
+	}
+	buf.convertir(bary);
+	return bary;
+}

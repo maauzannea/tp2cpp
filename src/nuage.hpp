@@ -7,13 +7,13 @@
 
 template <typename T> class Nuage {
 	private:
-		std::vector<T*> vectPoints;
+		std::vector<T> vectPoints;
 	public:
 		Nuage();
 		~Nuage();
 		void ajouter(T);
 		size_t size() const;
-		typedef typename std::vector<T*>::const_iterator const_iterator;
+		typedef typename std::vector<T>::const_iterator const_iterator;
 		const_iterator begin() const;
 		const_iterator end() const;
 };
@@ -26,7 +26,7 @@ Nuage<T>::~Nuage() {}
 
 template <typename T>
 void Nuage<T>::ajouter(T p) {
-	vectPoints.push_back(&p);
+	vectPoints.push_back(p);
 }
 
 template <typename T>

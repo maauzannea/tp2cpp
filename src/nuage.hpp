@@ -67,3 +67,24 @@ T barycentre_v1(Nuage<T> &n) {
 	buf.convertir(bary);
 	return bary;
 }
+
+template <>
+Polaire barycentre_v1(Nuage<Polaire> &n) {
+	Polaire bary;
+	double xSum = 0.0;
+	double ySum = 0.0;
+	typename Nuage<Polaire>::const_iterator it = n.begin();
+	while(it != n.end()) {
+		xSum += (*it).getAngle();
+		ySum += (*it).getDistance();
+		++it;
+	}
+	if (n.size() != 0) {
+		bary.setAngle(xSum/n.size());
+		bary.setDistance(ySum/n.size());
+	} else {
+		bary.setAngle(0.0);
+		bary.setDistance(0.0);
+	}
+	return bary;
+}

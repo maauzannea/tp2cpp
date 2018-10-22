@@ -6,6 +6,7 @@
 //#include <cosinus.hpp>
 //#include <exponentielle.hpp>
 #include <nuage.hpp>
+#include <factorielle.hpp>
 
 // Tests //-----------------------------------------------------------------------------------------
 
@@ -243,13 +244,13 @@ TEST_CASE ( "TP2_Nuage::BarycentreCartesien_V2" ) {
 }*/
 
 //------------------------------------------------------------------------------------------------ 8
-/*TEST_CASE ( "TP2_Metaprog::Factorielle" ) {
+TEST_CASE ( "TP2_Metaprog::Factorielle" ) {
  unsigned long f1 = Factorielle<1>::valeur;
  unsigned long f5 = Factorielle<5>::valeur;
 
  REQUIRE ( f1 == 1u );
  REQUIRE ( f5 == 5u*4u*3u*2u );
-}*/
+}
 
 //------------------------------------------------------------------------------------------------ 9
 /*TEST_CASE ( "TP2_Metaprog::Puissance" ) {

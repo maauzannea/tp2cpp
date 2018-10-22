@@ -8,8 +8,11 @@ Polaire::Polaire() : angle(0.0), distance(0.0) {}
 Polaire::Polaire(double pAngle, double pDistance) : angle(pAngle), distance(pDistance) {}
 
 Polaire::Polaire(const Cartesien &c) {
-	distance = sqrt(pow(c.getX(),2) + pow(c.getY(),2));
-	angle = 180.0 * acos(c.getX()/distance) / PI;
+	if ((distance = sqrt(pow(c.getX(),2) + pow(c.getY(),2))) != 0) {
+		angle = 180.0 * acos(c.getX()/distance) / PI;
+	} else {
+		angle = 0.0;
+	}
 }
 
 Polaire::~Polaire() {}

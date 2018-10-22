@@ -89,13 +89,13 @@ Polaire barycentre_v1<Polaire>(Nuage<Polaire> &n) {
 	return bary;
 }
 
-template <typename T, typename C>
-T barycentre_v2(C &n) {
+template <typename T, template <typename> class C>
+T barycentre_v2(C<T> &n) {
 	T bary;
 	Cartesien buf;
 	double xSum = 0.0;
 	double ySum = 0.0;
-	typename C::const_iterator it = n.begin();
+	typename C<T>::const_iterator it = n.begin();
 	while(it != n.end()) {
 		(*it).convertir(buf);
 		xSum += buf.getX();

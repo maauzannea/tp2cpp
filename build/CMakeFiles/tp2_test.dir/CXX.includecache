@@ -10,6 +10,8 @@
 point.hpp
 ../src/point.hpp
 
+../src/factorielle.hpp
+
 ../src/nuage.hpp
 point.hpp
 ../src/point.hpp
@@ -502,5 +504,7 @@ catch.hpp
 cmath
 -
 nuage.hpp
+-
+factorielle.hpp
 -
 

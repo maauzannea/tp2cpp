@@ -89,7 +89,7 @@ Polaire barycentre_v1<Polaire>(Nuage<Polaire> &n) {
 	return bary;
 }
 
-template <typename T, template <typename> class C>
+template <typename T, template <typename ...> class C>
 T barycentre_v2(C<T> &n) {
 	T bary;
 	Cartesien buf;

@@ -30,6 +30,8 @@ sstream
 point.hpp
 ../src/point.hpp
 
+../src/puissance.hpp
+
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/src/cartesien.cpp
 cartesien.hpp
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/src/cartesien.hpp
@@ -506,5 +508,7 @@ cmath
 nuage.hpp
 -
 factorielle.hpp
+-
+puissance.hpp
 -
 

@@ -41,7 +41,7 @@ set ( ZZ3_HEADERS
       src/nuage.hpp
       src/point.hpp
       src/polaire.hpp
-      #src/puissance.hpp
+      src/puissance.hpp
     )
 
 set ( ZZ3_SOURCES

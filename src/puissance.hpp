@@ -2,14 +2,14 @@
 
 template <int N> class Puissance {
 	public:
-		static const int valeur(const int p) {
+		static const double valeur(const double p) {
 			return p * Puissance<N-1>::valeur(p);
 		}
 };
 
 template <> class Puissance<0> {
 	public:
-		static const int valeur(const int p) {
-			return 1;
+		static const double valeur(const double p) {
+			return 1.0;
 		}
 };

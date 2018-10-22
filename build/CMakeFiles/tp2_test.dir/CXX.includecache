@@ -10,6 +10,18 @@
 point.hpp
 ../src/point.hpp
 
+../src/cosinus.hpp
+puissance.hpp
+../src/puissance.hpp
+factorielle.hpp
+../src/factorielle.hpp
+
+../src/exponentielle.hpp
+puissance.hpp
+../src/puissance.hpp
+factorielle.hpp
+../src/factorielle.hpp
+
 ../src/factorielle.hpp
 
 ../src/nuage.hpp
@@ -504,6 +516,10 @@ cassert
 catch.hpp
 /home/LOCAL.ISIMA.FR/maauzannea/Documents/ZZ3/CPP/TP2/tp_2/test/catch.hpp
 cmath
+-
+cosinus.hpp
+-
+exponentielle.hpp
 -
 nuage.hpp
 -

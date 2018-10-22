@@ -275,10 +275,10 @@ TEST_CASE ( "TP2_Metaprog::Cosinus" ) {
 }
 
 //----------------------------------------------------------------------------------------------- 12
-/*TEST_CASE ( "TP2_Metaprog::Sinus" ) {
+TEST_CASE ( "TP2_Metaprog::Sinus" ) {
  REQUIRE ( Sinus<3>::valeur(0.0) == Approx(std::sin(0.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<5>::valeur(-2.0) == Approx(std::sin(-2.0)).epsilon(1e-3) );
  REQUIRE ( Sinus<4>::valeur(1.0) == Approx(std::sin(1.0)).epsilon(1e-3) );
-}*/
+}
 
 // Fin //-------------------------------------------------------------------------------------------

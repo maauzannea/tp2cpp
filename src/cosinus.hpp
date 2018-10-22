@@ -17,3 +17,18 @@ template <> class Cosinus<0> {
 			return 1.0;
 		}
 };
+
+template <int N> class Sinus {
+	public:
+		static double valeur(const double x) {
+			return (Puissance<N>::valeur(-1.0)*Puissance<2*N+1>::valeur(x)/Factorielle<2*N+1>::valeur)
+				  + Sinus<N-1>::valeur(x);
+		}
+};
+
+template <> class Sinus<0> {
+	public:
+		static double valeur(const double x) {
+			return x;
+		}
+};
